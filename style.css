@@ -1,0 +1,386 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e6e6e6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Finance Summary */
+.finance-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.finance-item {
+  text-align: center;
+}
+
+.finance-value {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Reports */
+.report-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.report-container canvas {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Goals */
+.goal-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.goal-item {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+
+/* Transactions Table */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transactions-table th {
+  background-color: #f2f2f2;
+}
+
+/* Budgets */
+.budget-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.budget-item {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Settings */
+.settings-container {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.has-error .form-control {
+  border-color: #f44336;
+}
+
+.help-block {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+}
+
+.btn-default {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Link Styles */
+p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  .finance-summary,
+  .report-container,
+  .goal-container,
+  .budget-container {
+    grid-template-columns: 1fr;
+  }
+
+  .report-container canvas {
+    max-width: 100%;
+  }
+}
+/* Create Account Page Styles */
+.create-account-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-account-form .form-group {
+  margin-bottom: 20px;
+}
+
+.create-account-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.create-account-form .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.create-account-form .has-error .form-control {
+  border-color: #f44336;
+}
+
+.create-account-form .help-block {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.create-account-form .btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-account-form .btn-primary {
+  background-color: #4CAF50;
+}
+
+.create-account-form .btn-default {
+  background-color: #ccc;
+  color: #333;
+}
+
+.create-account-form .btn:hover {
+  opacity: 0.8;
+}
+
+.create-account-form p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.create-account-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Login Page Styles */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-form .has-error .form-control {
+  border-color: #f44336;
+}
+
+.login-form .help-block {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.login-form .btn-primary {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form .btn-primary:hover {
+  opacity: 0.8;
+}
+
+.login-form p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}
